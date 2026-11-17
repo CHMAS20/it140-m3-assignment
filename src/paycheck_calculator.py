@@ -1,18 +1,18 @@
-"""TODO: Replace with a one-line summary of the optional program (<73 chars).
+#program to calculate employee pay checks based on regular hours and overtime
+employee_name = input("Enter employee name: ")
+regular_hours = float(input("Enter regular hours worked: "))
+overtime_hours = float(input("Enter overtime hours worked: "))
+regular_pay = 20
+overtime_pay = 30
 
-Input:
-    TODO: Replace with the major input, including its type and source.
+if regular_hours <=40 and overtime_hours ==0:
+    employee_salary = regular_pay * regular_hours
+elif regular_hours > 40 and overtime_hours > 0:
+    employee_salary = (regular_pay * 40) + (overtime_pay * overtime_hours)
+else:
+    employee_salary = (regular_pay * regular_hours) + (overtime_pay * overtime_hours)
+print(f"{employee_name}'s salary is ${employee_salary:.2f}")
 
-Process:
-    TODO: Replace with a brief description of the major processing.
-
-Output:
-    TODO: Replace with the major output, including its destination.
-
-Typical usage example:
-    TODO: Replace with an original hours-worked input example.
-    TODO: Replace with the resulting paycheck output for your example.
-"""
 
 # === Constants ===
 REGULAR_RATE = 20
@@ -20,21 +20,7 @@ OVERTIME_RATE = 30
 REGULAR_HOURS_LIMIT = 40
 
 
-# === Main Function ===
-def main() -> None:
-    """Run the optional paycheck calculator practice program."""
-
-    # TODO: Replace with code to obtain hours worked in a numeric form.
-
-    # TODO: Replace with decision branching and processing from your design.
-
-    # TODO: Replace with code to display the calculated weekly paycheck.
-
-
-# === Main Guard ===
-if __name__ == "__main__":
-    main()
 
 
 # === References ===
-# TODO: Add APA-style reference for outside help you used, or delete this line.
+# zybooks.
